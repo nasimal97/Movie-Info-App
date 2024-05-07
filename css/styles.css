@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Container for the content */
+.content-container {
+    max-width: 800px; 
+    margin: 20px auto; /* Center the container and adjust margin */
+    padding: 20px; 
+    border: 2px solid hsl(47, 100%, 50%); 
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 200px; /* Adjust the size of the logo */
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans', sans-serif; 
+    color: hsl(47, 100%, 50%);
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchButton {
+    font-family: 'Open Sans', sans-serif; 
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+table, td {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+}
+
+table {
+    border-spacing: 10px;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+#today {
+    vertical-align: bottom;
+    font-size: small;
+}
+
+#title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 120%;
+    vertical-align: bottom;
+}
+
+

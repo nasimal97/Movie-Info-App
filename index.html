@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Information App</title> 
+    <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+</head>
+<body>
+    <div class="content-container"> <!-- Container for the content of the web page -->
+    <div class="logo-container">
+        <img id="finnkino-logo" img src="finnkino.logo.png" alt="Finnkino Logo" class="logo"> <!-- Finnkino logo image -->
+    <h1 id="heading"></h1> <!-- Heading element to display dynamic content -->
+    <form name="theatreList" id="theatreList" > <!-- Forming element with the name and id attributes -->
+        Pick a place:
+        <input id="cinema" list="theatres" name ="theatres" onchange="showMovies(event)"> <!-- The input field to select a cinema -->
+        <datalist id="theatres"> <!-- Datalist element to give input field options -->
+            <option value="Pääkaupunkiseutu"></option>
+            <option value="Espoo"></option>
+            <option value="Espoo: OMENA"></option>
+            <option value="Espoo: SELLO"></option>
+            <option value="Helsinki"></option>
+            <option value="Helsinki: ITIS"></option>
+            <option value="Helsinki: KINOPALATSI"></option>
+            <option value="Helsinki: MAXIM"></option>
+            <option value="Helsinki: TENNISPALATSI"></option>
+            <option value="Vantaa: FLAMINGO"></option>
+            <option value="Jyväskylä: FANTASIA"></option>
+            <option value="Kuopio: SCALA"></option>
+            <option value="Lahti: KUVAPALATSI"></option>
+            <option value="Lappeenranta: STRAND"></option>
+            <option value="Oulu: PLAZA"></option>
+            <option value="Pori: PROMENADI"></option>
+            <option value="Tampere"></option>
+            <option value="Tampere: CINE ATLAS"></option>
+            <option value="Tampere: PLEVNA"></option>
+            <option value="Turku ja Raisio"></option>
+            <option value="Turku: KINOPALATSI"></option>
+            <option value="Raisio: LUXE MYLLY"></option>
+        </datalist>
+        <br><br>
+        Search by keyword:
+        <input type="text" id="search"> <!-- Input field for keyword search -->
+        <input type ="button" id="searchButton" value="Search" onclick="searchFunction()"> <!-- Button for keyword search -->
+        <br><br>
+    </form>
+    <div id="results"></div> <!-- Container for displaying search results -->
+    <script src="js/script.js"></script> 
+</body>
+</html>
